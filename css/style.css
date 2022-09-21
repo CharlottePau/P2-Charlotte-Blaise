@@ -670,6 +670,19 @@ h3 {
   
     .accomodations-cards {
       width: 100%;
+      transition: none;
+    }
+    
+    .accomodations-cards:hover {
+      transform: none;
+    }
+    
+    .most-popular-cards {
+      transition: none;
+    }
+    
+    .most-popular-cards:hover {
+      transform: none;
     }
 
     .title h2 {
@@ -686,6 +699,15 @@ h3 {
       margin: 15px;
       width: auto;
     }
+    
+    .activity-card {
+      transition: none;
+    }
+    
+    .activity-card:hover {
+      transform: none;
+    }
+
 
     .activity-card.card-item2 {
       height: 300px;
