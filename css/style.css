@@ -709,6 +709,14 @@ a {
     flex-direction: column;
   }
 
+  .card-container:nth-child(1) {
+    margin-left: 15px;
+  }
+
+  .card-container:nth-last-child(1) {
+    margin-right: 15px;
+  }
+
   .card-container {
     margin: 15px;
     width: auto;
