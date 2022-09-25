@@ -773,4 +773,23 @@ h3 {
       padding-right: 0;
     }
     
+    @media screen and (max-width: 991px) {
+      .most-popular {
+        flex-direction: column-reverse;
+        width: 100%;
+      }
+      
+      body {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .container-filtres {
+        flex-direction: row;
+      }
+
+      .container-filtres .filtres {
+        margin: 10px;
+      }
+    
   }
