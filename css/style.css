@@ -614,9 +614,14 @@ a {
     width: 100%;
   }
 
+  .main p {
+    padding-left: 20px;
+    width: 100%;
+  }
+
   .search-bar {
-    margin: auto;
-    width: 350px;
+    margin-left: 20px;
+    width: 100%;;
   }
 
   .location-dot {
@@ -633,7 +638,6 @@ a {
   }
 
   .container-filtres .filtres-title {
-    margin-left: 35px;
     margin-bottom: 20px;
     width: 100%;
   }
@@ -648,8 +652,8 @@ a {
   }
 
   .infos {
-    margin: 20px auto 35px;
-    width: 350px;
+    margin: 20px 10px 35px;
+    width: 100%;
   }
 
   .accomodations-and-popular {
@@ -670,7 +674,7 @@ a {
   }
 
   .main {
-    width: 350px;
+    width: 100%;
     margin: auto;
   }
 
@@ -769,13 +773,13 @@ a {
   }
 
   .main h1 {
+    padding-left: 20px;
     font-size: 24px;
   }
 
   .container-filtres {
-    margin: 30px;
+    margin: 20px;
     display: flex;
-    margin: 30px;
   }
 
   .most-popular {
