@@ -3,14 +3,18 @@
   src: url("../fonts/Raleway-VariableFont_wght.ttf");
 }
 
+/*APPLIES A DEFINITE FONT, BOX-SIZING, MARGIN AND PADDING TO ALL ITEMS, THUS CANCELS MARGINS AND PADDINGS PUT BY DEFAULTS BY BROWSERS*/
+
 * {
-  box-sizing: border-box;
   font-family: "Raleway";
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 
 }
+
+/*THE FLEX ITEMS IN NAV CAN BE PUT ON SEVERAL LINES, ITEMS ARE FLEX, DEFINES HOW THE FLEX ITEMS ARE POSITIONED ALONG THE MAIN AXIS 
+(IN THAT CASE : FROM THE END OF THE LINE), DEFINES HOW THE FLEX ITEMS ARE POSITIONED ALONG THE SECOND AXIS (IN THAT CASE : CENTER)*/
 
 nav {
   flex-wrap: wrap;
@@ -19,11 +23,7 @@ nav {
   align-items: center;
 }
 
-nav a {
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
+/*DEFINES THE LOGO'S WIDTH, PADDING AND MARGIN-RIGHT SO THAT LOGO IS POSITIONED AS REQUESTED*/
 
 .link-nav-logo {
   width: 160px;
@@ -31,54 +31,57 @@ nav a {
   margin-right: auto;
 }
 
+/*DEFINES LOGOS' IMAGE'S WIDTH SO THAT IT'S NOT TOO BIG*/
+
 .link-nav-logo a img {
   width: 100px;
 }
 
+/*CANCELS ANY TYPE OF BULLET POINT'S APPEARANCE, ITEMS ARE FLEX*/
+
 .menu-nav {
   list-style-type: none;
   display: flex;
-  margin: 0px;
-  padding: 0px;
 }
+
+/*DEFINES THE LINKS' WIDTH, ITEMS ARE FLEX, INDICATES HOW SPACE IS DISTRIBUTED BETWEEN AND AROUND ITEMS ACCORDING TO THE MAIN AXIS 
+(IN THAT CASE : AT THE CENTER), SETS A PADDING*/
 
 .link-nav {
   width: 100%;
-  height: 80px;
   display: flex;
   justify-content: center;
   padding: 30px;
-  border-top: 2px white solid;
 }
+
+/*DEFINES WHAT HAPPENS WHEN USER HOVERS OVER LINKS*/
 
 .link-nav:hover {
   border-top: 2px #0065fc solid;
-}
-
-.link-nav:hover a {
   color: #0065fc;
 }
 
-
-.main-section-filters {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
+/*SETS A MARGIN-BOTTOM AND A FONT SIZE FOR BOTH h1 AND p*/
 
 .main {
   margin-bottom: 32px;
   font-size: 12px;
 }
 
+/*SETS A MARGIN-BOTTOM ONLY FOR h1*/
+
 .main h1 {
   margin-bottom: 15px;
 }
+
+/*SETS A FONT-SIZE ANS A MARGIN-BOTTOM ONLY FOR p*/
 
 .main p {
   font-size: 14px;
   margin-bottom: 25px;
 }
+
+/*DEFINES VISUAL ASPECT OF LOCATION DOT, HOW IT'S POSITIONED, ITS BACKGROUND COLOR AND BORDER RADIUS*/
 
 .location-dot {
   width: 50px;
@@ -95,10 +98,11 @@ nav a {
 }
 
 .search-location {
-  border-radius: 0px;
   border: 1px #f2f2f2 solid;
   padding: 15px;
 }
+
+/*DEFINES HOW IS WRITTEN WHAT'S IN THE PLACEHOLDER*/
 
 #search-location::placeholder {
   color: black;
@@ -114,6 +118,8 @@ nav a {
   border-radius: 0px 10px 10px 0px;
   padding: 5px 15px 5px 15px;
 }
+
+/*MAKES SURE THE MAGNIFYING GLASS BUTTON DOESN'T APPEAR IN DESKTOP VERSION*/
 
 .search-button .fa-magnifying-glass {
   display: none;
@@ -154,7 +160,6 @@ nav a {
   color: #0065fc;
   border-radius: 25px;
   padding: 15px;
-  margin: -2px;
 }
 
 .filtres:hover {
@@ -175,20 +180,6 @@ nav a {
   margin-right: 10px;
 }
 
-.accomodations-cards-img img {
-  width: 100%;
-  height: 100%;
-}
-
-.accomodations-cards {
-  transition: all 0.25s ease;
-
-}
-
-.accomodations-cards:hover {
-  transform: scale(1.05);
-}
-
 .accomodations-and-popular {
   gap: 32px;
   margin-bottom: 32px;
@@ -196,7 +187,7 @@ nav a {
 }
 
 .accomodations-marseille {
-  width: 62%;
+  width: 65%;
   border-radius: 15px;
   background-color: #f2f2f2;
 }
@@ -217,26 +208,17 @@ nav a {
 .accomodations-cards {
   box-shadow: 0px 1px 10px 1px lightgrey;
   gap: 16px;
-  flex-wrap: wrap;
   justify-content: space-around;
-  display: flex;
   width: 330px;
   min-height: 200px;
   border-radius: 25px;
   background-color: white;
   padding: 5px;
+  transition: all 0.25s ease;
 }
 
-.accomodations-cards a {
-  width: 100%;
-  color: black;
-  text-decoration: none;
-  flex-direction: column;
-}
-
-.accomodations-cards a:visited {
-  color: black;
-  text-decoration: none;
+.accomodations-cards-img {
+  height: 120px;
 }
 
 .accomodations-cards-img img {
@@ -246,13 +228,15 @@ nav a {
   border-radius: 20px 20px 0px 0px;
 }
 
-.accomodations-cards-img {
-  width: 100%;
-  height: 120px;
+.accomodations-cards:hover {
+  transform: scale(1.05);
+}
+
+.accomodations-cards a:visited {
+  color: black;
 }
 
 .accomodations-cards-body {
-  width: 100%;
   height: 80px;
   padding: 5px;
   display: flex;
@@ -261,31 +245,17 @@ nav a {
 }
 
 .accomodations-title-text {
-  width: 100%;
   height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.accomodations-cards-title {
-  font-size: 14px;
-}
-
-.accomodations-cards-title h3 {
-  margin: 0px;
-}
-
 .accomodations-cards-text {
   font-size: 14px;
 }
 
-.accomodations-cards-text p {
-  margin: 0px;
-}
-
 .stars {
-  width: 100%;
   height: 20px;
 }
 
@@ -297,53 +267,36 @@ nav a {
   color: #f2f2f2;
 }
 
-.show-more h4 {
-  padding-left: 20px;
-  padding-top: 32px;
-  margin-bottom: 20px;
-  display: flex;
-}
-
 .show-more {
   list-style-type: none;
 }
 
+.show-more h4 {
+  padding-left: 20px;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
 .most-popular {
-  flex-wrap: wrap;
-  flex: 1;
+  flex: 1; /*OR FLEX-GROW:1 MEANS THAT THE DIV WILL GROW IN THE SAME PROPORTION AS THE WINDOW'S SIZE*/
   border: 1px solid #F2F2F2;
   padding: 0 25px 10px 25px;
   border-radius: 15px;
   background-color: #f2f2f2;
-  align-content: space-between;
-}
-
-.most-popular-cards {
-  transition: all 0.25s ease;
-}
-
-.most-popular-cards:hover {
-  transform: scale(1.05);
 }
 
 .most-popular-title {
   margin-top: 30px;
   margin-bottom: 32px;
-  width: 100%;
-  padding-left: 32px;
   padding-right: 32px;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.most-popular-title h2 {
-  margin: 0px;
-}
-
 .most-popular-container {
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 32px;
   display: flex;
   justify-content: space-around
@@ -351,13 +304,16 @@ nav a {
 
 .most-popular-cards {
   box-shadow: 0px 1px 10px 1px lightgrey;
-  flex: 1;
-  height: 120px;
+  flex: 1 1 0%; /*FLEX-GROW (THE DIV WILL GROW IN THE SAME PROPORTION AS THE WINDOW'S SIZE, FLEX-SHRINK AND FLEX-BASIS (TELLS AN ITEM TO STOCK TO AN IDEAL SIZE*/
   border-radius: 16px;
   background-color: white;
   padding: 5px;
   display: flex;
-  flex-direction: row;
+  transition: all 0.25s ease;
+}
+
+.most-popular-cards:hover {
+  transform: scale(1.05);
 }
 
 .most-popular-cards a {
@@ -365,10 +321,14 @@ nav a {
   display: flex;
 }
 
+.most-popular-cards-img {
+  min-width: 130px;
+  border: 4px solid transparent;
+  object-fit: cover;
+  width: 100%;
+}
+
 .most-popular-cards-img img {
-  overflow: hidden;
-  object-position: center;
-  float: left;
   display: flex;
   width: 100%;
   height: 144px;
@@ -376,17 +336,8 @@ nav a {
   border-radius: 15px 0px 0px 15px;
 }
 
-.most-popular-cards-img {
-  min-width: 130px;
-  border-radius: 15px;
-  border: 4px solid transparent;
-  object-fit: cover;
-  width: 100%;
-  height: 150px;
-  display: flex;
-}
-
 .most-popular-cards-body {
+  font-size: 14px;
   margin: 10px 0 10px;
   padding-left: 20px;
   display: flex;
@@ -402,27 +353,37 @@ nav a {
   justify-content: space-between;
 }
 
-.most-popular-cards-title {
-  width: 80%;
-  font-size: 14px;
-}
-
-.most-popular-cards-title h3 {
-  margin: 0px;
-}
-
-.most-popular-cards-text {
-  width: 80%;
-  font-size: 14px;
-}
-
-.most-popular-cards-text p {
-  margin: 0px;
-}
-
 .most-popular-stars {
-  width: 100%;
   height: 20px
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h2 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.activities-list {
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+  display: flex;
+  height: 600px;
+}
+
+.card-container {
+  display: flex;
+  width: calc(25% - 20px); /*PERFORMS CALCULATION WITH SPECIFIED PROPERTY VALUES*/
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .activities-Marseille {
@@ -438,17 +399,6 @@ nav a {
   transform: scale(1.05);
 }
 
-.title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.title h2 {
-  margin-bottom: 30px;
-  font-size: 25px;
-  margin-top: 20px;
-}
-
 .activities-Marseille.activities-list {
   height: 500px;
   display: flex;
@@ -458,31 +408,12 @@ nav a {
   gap: 3px;
 }
 
-.activities-list {
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0 0 20px 0;
-  display: flex;
-  height: 600px;
-
-}
-
-.card-container:nth-child(1) {
+.card-container:nth-child(1) /*MATCHES THE FIRST ELEMENT AMONG A GROUP OF SIBLINGS*/ {
   margin-left: 0px;
 }
 
-.card-container:nth-last-child(1) {
+.card-container:nth-last-child(1) /*MATCHES THE LAST ELEMENT AMONG A GROUP OF SIBLINGS*/ {
   margin-right: 0px;
-}
-
-.card-container {
-  display: flex;
-  width: calc(25% - 20px);
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .card-item1 {
