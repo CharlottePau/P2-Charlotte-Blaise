@@ -35,8 +35,6 @@ nav {
   margin-right: auto;
 }
 
-/*DEFINES LOGOS' IMAGE'S WIDTH SO THAT IT'S NOT TOO BIG*/
-
 .link-nav-logo a img {
   width: 100px;
 }
@@ -47,9 +45,6 @@ nav {
   list-style-type: none;
   display: flex;
 }
-
-/*DEFINES THE LINKS' WIDTH, ITEMS ARE FLEX, INDICATES HOW SPACE IS DISTRIBUTED BETWEEN AND AROUND ITEMS ACCORDING TO THE MAIN AXIS 
-(IN THAT CASE : AT THE CENTER), SETS A PADDING*/
 
 .link-nav {
   width: 100%;
@@ -65,27 +60,19 @@ nav {
   color: #0065fc;
 }
 
-/*SETS A MARGIN-BOTTOM AND A FONT SIZE FOR BOTH h1 AND p*/
-
 .search-and-filters {
   margin-bottom: 32px;
   font-size: 12px;
 }
 
-/*SETS A MARGIN-BOTTOM ONLY FOR h1*/
-
 .search-and-filters h1 {
   margin-bottom: 15px;
 }
-
-/*SETS A FONT-SIZE ANS A MARGIN-BOTTOM ONLY FOR p*/
 
 .search-and-filters p {
   font-size: 14px;
   margin-bottom: 25px;
 }
-
-/*DEFINES VISUAL ASPECT OF LOCATION DOT, HOW IT'S POSITIONED, ITS BACKGROUND COLOR AND BORDER RADIUS*/
 
 .location-dot {
   width: 50px;
@@ -308,7 +295,7 @@ nav {
 
 .most-popular-cards {
   box-shadow: 0px 1px 10px 1px lightgrey;
-  flex: 1 1 0%; /*FLEX-GROW (THE DIV WILL GROW IN THE SAME PROPORTION AS THE WINDOW'S SIZE, FLEX-SHRINK AND FLEX-BASIS (TELLS AN ITEM TO STOCK TO AN IDEAL SIZE*/
+  flex: 1 1 0%; /*FLEX-GROW (THE DIV WILL GROW IN THE SAME PROPORTION AS THE WINDOW'S SIZE, FLEX-SHRINK AND FLEX-BASIS (TELLS AN ITEM TO STICK TO AN IDEAL SIZE*/
   border-radius: 16px;
   background-color: white;
   padding: 5px;
