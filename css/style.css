@@ -10,7 +10,11 @@
   box-sizing: border-box; /*DIMENSIONS THAT'LL BE DEFINED WILL APPLY TO THE BOX. ELEMENT WILL BE COMPRESSED, ITS SIZE WON'T CHANGE*/
   margin: 0;
   padding: 0;
+}
 
+main {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /*THE FLEX ITEMS IN NAV CAN BE PUT ON SEVERAL LINES, ITEMS ARE FLEX, DEFINES HOW THE FLEX ITEMS ARE POSITIONED ALONG THE MAIN AXIS 
@@ -63,20 +67,20 @@ nav {
 
 /*SETS A MARGIN-BOTTOM AND A FONT SIZE FOR BOTH h1 AND p*/
 
-.main {
+.search-and-filters {
   margin-bottom: 32px;
   font-size: 12px;
 }
 
 /*SETS A MARGIN-BOTTOM ONLY FOR h1*/
 
-.main h1 {
+.search-and-filters h1 {
   margin-bottom: 15px;
 }
 
 /*SETS A FONT-SIZE ANS A MARGIN-BOTTOM ONLY FOR p*/
 
-.main p {
+.search-and-filters p {
   font-size: 14px;
   margin-bottom: 25px;
 }
@@ -506,6 +510,12 @@ a {
 
 @media screen and (max-width: 768px) {
   body {
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  main {
     padding-left: 0;
     padding-right: 0;
   }
@@ -532,7 +542,7 @@ a {
     width: 100%;
   }
 
-  .main p {
+  .search-and-filters p {
     padding-left: 20px;
     width: 100%;
   }
@@ -591,7 +601,7 @@ a {
     width: 100%;
   }
 
-  .main {
+  .search-and-filters {
     width: 100%;
     margin: auto;
   }
@@ -690,7 +700,7 @@ a {
     height: 300px;
   }
 
-  .main h1 {
+  .search-and-filters h1 {
     padding-left: 20px;
     font-size: 24px;
   }
