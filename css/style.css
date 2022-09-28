@@ -417,7 +417,7 @@ nav {
 }
 
 .card-link {
-  position: relative; /*DEFINES THE POSITION'S PROPERTY : RELATIVE*/
+  position: relative; /*DEFINES THE POSITION'S PROPERTY : RELATIVE. IT'LL BE POSITIONED ACCORDING TO WHERE IT'S POSITIONED IN THE FLUX*/
   display: block;
   width: 100%;
   height: 100%;
