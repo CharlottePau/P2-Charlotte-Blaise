@@ -509,7 +509,6 @@ a {
 
   .link-nav {
     border-bottom: 3px solid #f2f2f2;
-
   }
 
   .link-nav:hover {
@@ -526,11 +525,6 @@ a {
   .menu-nav {
     border-top: transparent;
     justify-content: center;
-    width: 100%;
-  }
-
-  .search-and-filters p {
-    padding-left: 20px;
     width: 100%;
   }
 
@@ -552,6 +546,39 @@ a {
     display: block;
   }
 
+  .search-button .fa-solid.fa-magnifying-glass {
+    border: 2.2px solid #0065fc;
+    display: block;
+    background-color: #0065fc;
+    color: white;
+    border-color: #0065fc;
+    font-weight: bold;
+  }
+
+  .search-button span {
+    display: none;
+  }
+
+  .search-and-filters {
+    width: 100%;
+    margin: auto;
+  }
+
+  .search-and-filters h1 {
+    padding-left: 20px;
+    font-size: 24px;
+  }
+
+  .search-and-filters p {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .container-filtres {
+    margin: 20px;
+    display: flex;
+  }
+
   .container-filtres .filtres-title {
     margin-bottom: 20px;
     width: 100%;
@@ -571,26 +598,10 @@ a {
     width: 100%;
   }
 
+
   .accomodations-and-popular {
     flex-direction: column;
     width: 100%;
-  }
-
-  .most-popular-container {
-    width: auto;
-  }
-
-  .most-popular-title {
-    padding-bottom: 15px;
-  }
-
-  .most-popular-cards a {
-    width: 100%;
-  }
-
-  .search-and-filters {
-    width: 100%;
-    margin: auto;
   }
 
   .accomodations-container {
@@ -617,6 +628,27 @@ a {
     transform: none;
   }
 
+
+  .most-popular {
+    padding: 15px;
+    border-radius: 0;
+    order: -1;
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .most-popular-container {
+    width: auto;
+  }
+
+  .most-popular-title {
+    padding-bottom: 15px;
+  }
+
+  .most-popular-cards a {
+    width: 100%;
+  }
+
   .most-popular-cards {
     transition: none;
   }
@@ -627,6 +659,13 @@ a {
 
   .title h2 {
     padding-left: 25px;
+  }
+
+
+  .container {
+    align-items: center;
+    justify-content: center;
+    height: auto;
   }
 
   .activities-list {
@@ -647,15 +686,6 @@ a {
     margin: 15px;
     width: auto;
   }
-
-  .activity-card {
-    transition: none;
-  }
-
-  .activity-card:hover {
-    transform: none;
-  }
-
 
   .activity-card {
     transition: none;
@@ -687,42 +717,7 @@ a {
     height: 300px;
   }
 
-  .search-and-filters h1 {
-    padding-left: 20px;
-    font-size: 24px;
-  }
 
-  .container-filtres {
-    margin: 20px;
-    display: flex;
-  }
-
-  .most-popular {
-    padding: 15px;
-    border-radius: 0;
-    order: -1;
-    width: 100%;
-    padding-bottom: 16px;
-  }
-
-  .search-button .fa-solid.fa-magnifying-glass {
-    border: 2.2px solid #0065fc;
-    display: block;
-    background-color: #0065fc;
-    color: white;
-    border-color: #0065fc;
-    font-weight: bold;
-  }
-
-  .search-button span {
-    display: none;
-  }
-
-  .container {
-    align-items: center;
-    justify-content: center;
-    height: auto;
-  }
 
   footer {
     flex-direction: column;
@@ -733,10 +728,15 @@ a {
 
 /*MEDIA QUERIES FOR TABLET VERSION*/
 
-@media screen and (max-width: 991px) {
-  .most-popular {
+@media screen and (max-width: 992px) {
+
+  .accomodations-and-popular {
     flex-direction: column-reverse;
     width: 100%;
+  }
+
+  .accomodations-marseille {
+    width: auto;
   }
 
   body {
@@ -744,12 +744,97 @@ a {
     padding-right: 0;
   }
 
+
   .container-filtres {
+    width: auto;
     flex-direction: row;
   }
 
   .container-filtres .filtres {
     margin: 10px;
   }
+
+
+  .most-popular-cards {
+    transition: none;
+  }
+
+  .most-popular-cards:hover {
+    transform: none;
+  }
+
+
+  .accomodations-cards {
+    transition: none;
+  }
+
+  .accomodations-cards:hover {
+    transform: none;
+  }
+
+  .container {
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+.activities-list {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  margin: 15px;
+  width: auto;
+}
+
+.card-container:nth-child(1) {
+  margin-left: 15px;
+}
+
+.activity-card {
+  height: 300px;
+  transition: none;
+}
+
+.activity-card.card-item2 {
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.activity-card.card-item3 {
+  height: 300px;
+}
+
+.activity-card.card-item4 {
+  height: 300px;
+}
+
+.activity-card.card-item5 {
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.activity-card.card-item6 {
+  height: 300px;
+}
+
+.card-container:nth-last-child(1) {
+  margin-right: 15px;
+}
+
+  .activity-card:hover {
+    transform: none;
+}
+
+footer {
+  padding: 30px;
+  column-gap: 130px;
+}
+
+.container-footer{
+  padding: 0;
+}
 
   }
