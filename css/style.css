@@ -1,8 +1,3 @@
-@font-face {
-  font-family: Raleway;
-  src: url("../fonts/Raleway-VariableFont_wght.ttf");
-}
-
 /*APPLIES A DEFINITE FONT, BOX-SIZING, MARGIN AND PADDING TO ALL ITEMS, THUS CANCELS MARGINS AND PADDINGS PUT BY DEFAULTS BY BROWSERS*/
 
 * {
