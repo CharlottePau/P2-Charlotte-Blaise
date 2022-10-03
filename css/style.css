@@ -12,17 +12,12 @@ main {
   padding-right: 30px;
 }
 
-/*THE FLEX ITEMS IN NAV CAN BE PUT ON SEVERAL LINES, ITEMS ARE FLEX, DEFINES HOW THE FLEX ITEMS ARE POSITIONED ALONG THE MAIN AXIS 
-(IN THAT CASE : FROM THE END OF THE LINE), DEFINES HOW THE FLEX ITEMS ARE POSITIONED ALONG THE SECOND AXIS (IN THAT CASE : CENTER)*/
-
 nav {
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*THE FLEX ITEMS IN NAV CAN BE PUT ON SEVERAL LINES*/
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: flex-end; /*DEFINES HOW THE FLEX ITEMS ARE POSITIONED ALONG THE MAIN AXIS (FROM THE END OF THE LINE)*/
+  align-items: center; /*DEFINES HOW THE FLEX ITEMS ARE POSITIONED ALONG THE SECOND AXIS (AT THE CENTER)*/
 }
-
-/*DEFINES THE LOGO'S WIDTH, PADDING AND MARGIN-RIGHT SO THAT LOGO IS POSITIONED AS REQUESTED*/
 
 .link-nav-logo {
   width: 160px;
@@ -33,8 +28,6 @@ nav {
 .link-nav-logo a img {
   width: 100px;
 }
-
-/*CANCELS ANY TYPE OF BULLET POINT'S APPEARANCE, ITEMS ARE FLEX*/
 
 .menu-nav {
   list-style-type: none;
