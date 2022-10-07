@@ -41,8 +41,6 @@ nav {
   padding: 30px;
 }
 
-/*DEFINES WHAT HAPPENS WHEN USER HOVERS OVER LINKS*/
-
 .link-nav:hover {
   border-top: 2px #0065fc solid;
   color: #0065fc;
